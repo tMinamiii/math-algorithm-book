@@ -5,8 +5,8 @@ S = sum(A)
 
 # 答えの出力
 if S % 2 != K % 2:
-	print("No")
+    print("No")
 elif S > K:
-	print("No")
+    print("No")
 else:
-	print("Yes")
+    print("Yes")

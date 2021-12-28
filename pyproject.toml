@@ -1,0 +1,63 @@
+[tool.poetry]
+name = "project name"
+version = "0.1.0"
+description = ""
+authors = ["name <email>"]
+
+[tool.poetry.dependencies]
+python = "3.9"
+
+[tool.poetry.dev-dependencies]
+black = "^21.12b0"
+flake8 = "^4.0.1"
+ipython = "^7.30.1"
+isort = "^5.10.1"
+mypy = "^0.930"
+pre-commit = "^2.16.0"
+pydocstyle = "^6.1.1"
+pytest = "^6.2.5"
+pytest-cov = "^3.0.0"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
+
+[tool.black]
+line-length = 99
+target-version = ['py39']
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+  # The following are specific to Black, you probably don't want those.
+  | blib2to3
+  | tests/data
+  | profiling
+)/
+'''
+
+[tool.pyright]
+include = ["codes/python"]
+exclude = ["**/node_modules", "**/__pycache__"]
+ignore = []
+
+stubPath = "codes/python/stubs"
+venvPath = ".venv"
+
+reportMissingTypeStubs = false
+
+pythonVersion = "3.9"
+typeCheckingMode = "strict"
+
+executionEnvironments = [
+  { root = "./", pythonVersion = "3.9", extraPaths = ["code/python"] }
+]

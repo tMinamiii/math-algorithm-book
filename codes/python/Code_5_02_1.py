@@ -3,10 +3,10 @@
 
 N = int(input())
 if N % 4 == 1:
-	print(2)
+    print(2)
 if N % 4 == 2:
-	print(4)
+    print(4)
 if N % 4 == 3:
-	print(8)
+    print(8)
 if N % 4 == 0:
-	print(6)
+    print(6)

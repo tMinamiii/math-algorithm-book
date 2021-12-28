@@ -4,8 +4,8 @@
 N = int(input())
 Answer = 0
 
-for i in range(1, N+1):
-	d = (N // i)
-	Answer += i * (d * (d + 1) // 2)
+for i in range(1, N + 1):
+    d = N // i
+    Answer += i * (d * (d + 1) // 2)
 
 print(Answer)

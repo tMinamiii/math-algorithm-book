@@ -1,5 +1,5 @@
 N = int(input())
 if N % 4 == 0:
-	print("Second")
+    print("Second")
 else:
-	print("First")
+    print("First")

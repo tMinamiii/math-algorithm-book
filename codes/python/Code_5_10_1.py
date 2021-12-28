@@ -3,6 +3,6 @@ import math
 a, b, c = map(int, input().split())
 
 if math.sqrt(a) + math.sqrt(b) < math.sqrt(c):
-	print("Yes")
+    print("Yes")
 else:
-	print("No")
+    print("No")

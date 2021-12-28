@@ -13,5 +13,5 @@ Mx = B * math.cos(AngleM * PI / 180.0)
 My = B * math.sin(AngleM * PI / 180.0)
 
 # 答えを出力
-d = (((Hx - Mx) ** 2 + (Hy - My) ** 2) ** 0.5)
+d = ((Hx - Mx) ** 2 + (Hy - My) ** 2) ** 0.5
 print("%.12f" % d)

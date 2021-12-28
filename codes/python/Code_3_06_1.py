@@ -7,4 +7,4 @@ A.sort()
 
 # 出力（1, 1, 3, 4, 5 の順に出力される）
 for i in range(N):
-	print(A[i])
+    print(A[i])
